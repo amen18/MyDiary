@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/media_play_menu"
+        android:icon="@drawable/media_butt"
+        android:visible="true"
+        yourapp:showAsAction="always"
+        android:title="@string/item2"/>
+
+    <!--<item-->
+        <!--android:id="@+id/share_menu"-->
+        <!--android:icon="@drawable/share_btn"-->
+        <!--android:visible="true"-->
+        <!--yourapp:showAsAction="always"-->
+        <!--android:title="@string/item3"/>-->
+
+    <item
+        android:id="@+id/delete_menu"
+        android:icon="@drawable/garbage_del"
+        android:visible="true"
+        yourapp:showAsAction="always"
+        android:title="@string/item1"/>
+
+
+
+
+
+
+</menu>

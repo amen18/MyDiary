@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:background="@drawable/b20"
+    android:layout_height="wrap_content">
+
+    <!--<Button-->
+        <!--style="?android:attr/buttonStyleSmall"-->
+        <!--android:layout_width="33dp"-->
+        <!--android:layout_height="33dp"-->
+        <!--android:textSize="23dp"-->
+        <!--android:id="@+id/button3"-->
+        <!--android:background="@drawable/right_arrow1"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#5aeef0f3"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="127dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:background="@null"
+            android:id="@+id/editText" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/savePasswordButton"
+            android:src="@drawable/right_arrow1"
+            android:layout_alignTop="@+id/editText"
+            android:layout_alignRight="@+id/editText"
+            android:layout_alignEnd="@+id/editText"
+            android:onClick="savePassword"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/scrollViewColor"
+    android:id="@+id/scrollVewInfo">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/textBackgroundColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:background="@color/textBackgroundColor"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+        <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9"
+        android:layout_gravity="center"
+            android:background="@color/textBackgroundColor"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp">
+
+
+            <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+                android:background="@color/textBackgroundColor"
+                android:id="@+id/viewTitle"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp" />
+
+
+        </LinearLayout>
+
+        <!--<ImageView-->
+        <!--android:layout_width="57dp"-->
+        <!--android:layout_height="57dp"-->
+        <!--android:id="@+id/imageView2"-->
+        <!--android:src="@android:drawable/ic_menu_delete"-->
+        <!--android:layout_weight="0.1"-->
+        <!--android:onClick="delete"/>-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/Black"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text1"
+                android:id="@+id/viewText"
+                android:minLines="3"
+                android:background="@color/textBackgroundColor"
+                android:singleLine="false"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/textBackgroundColor"
+                android:gravity="right"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Medium Text"
+                    android:background="@color/textBackgroundColor"
+                    android:id="@+id/viewDate" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--<Button-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="70dp"-->
+            <!--android:onClick="media_btn"-->
+            <!--android:background="@drawable/unnamed"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginLeft="10dp" />-->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <Gallery
+                android:id="@+id/infoImageGallery"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

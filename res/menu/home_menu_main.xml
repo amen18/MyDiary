@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/add_note"
+            android:title="Add note"
+            android:icon="@drawable/add_menu"
+            />
+
+        <item
+            android:id="@+id/color_styles"
+            android:icon="@drawable/color_menu"
+            android:title="Color and styles" />
+        <item
+            android:id="@+id/change_pass"
+            android:icon="@drawable/pin_code_menu"
+            android:title="Change password" />
+        <item
+            android:id="@+id/search_filter"
+            android:icon="@drawable/search_menu"
+            android:title="Search by day" />
+
+        <!--<item-->
+            <!--android:id="@+id/five"-->
+            <!--android:icon="@drawable/cancle_black_cal"-->
+            <!--android:title="Search by day" />-->
+
+    </group>
+
+    <item android:title="Gallery">
+        <menu>
+            <item
+                android:id="@+id/galleryMenu"
+                android:icon="@drawable/image_gall"
+                android:title="All photos" />
+        </menu>
+    </item>
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/settings"
+                android:icon="@drawable/settings_mat"
+                android:title="Settings" />
+
+            <!--<item-->
+                <!--android:id="@+id/help"-->
+                <!--android:icon="@drawable/help_menu"-->
+                <!--android:title="Help" />-->
+
+            <item
+                android:id="@+id/program"
+                android:icon="@drawable/about_menu"
+                android:title="About the program" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9e0093</color>
+    <color name="colorPrimary1">#000000</color>
+    <color name="colorPrimaryDark">#131313</color>
+    <color name="colorPrimaryDark1">#9e0093</color>
+    <color name="colorAccent">#9e0093</color>
+    <color name="colorAccent_a">#000000</color>
+
+    <color name="colorAccent1">#ffffff</color>
+    <color name="nav_Color">#e2e2e2</color>
+
+    <color name="scrollViewColor">#16fffac7</color>
+    <color name="textBackgroundColor">#4cffffff</color>
+
+
+
+
+    <color name="textColor">#e2e2e2</color>
+    <color name="layoutColor">#252525</color>
+    <color name="button_color">#787777</color>
+
+
+    <color name="Day_colorAccent">#83002c</color>
+    <color name="Black">#000000</color>
+    <color name="blue">#001063</color>
+    <color name="Year_colorAccent">#ce0046</color>
+    <color name="lay">#dedede</color>
+    <color name="grey">#dadada</color>
+    <color name="title">#c7064d</color>
+    <color name="date">#614949</color>
+
+    <color name="january">#363dcf</color>
+    <color name="february">#5bbaed</color>
+    <color name="march">#07d434</color>
+    <color name="april">#89d447</color>
+    <color name="may">#e7ff0e</color>
+    <color name="june">#fffc45</color>
+    <color name="july">#ffec19</color>
+    <color name="august">#f9bd08</color>
+    <color name="september">#ed9f0d</color>
+    <color name="october">#fc00ef</color>
+    <color name="november">#fbdf022e</color>
+    <color name="december">#b5f5eb</color>
+
+
+    <color name="toolcol1">#9e0093</color>
+    <color name="toolcol2">#ad00cf</color>
+    <color name="toolcol3">#d1000a</color>
+    <color name="toolcol3_1">#ff3c45</color>
+    <color name="toolcol4">#fa3fc2</color>
+    <color name="toolcol4_1">#cc1c97</color>
+    <color name="toolcol5">#131313</color>
+    <color name="toolcol5_1">#7c7c7c</color>
+    <color name="toolcol6">#1100a6</color>
+    <color name="toolcol7">#01e9d6</color>
+    <color name="toolcol8">#00dac9</color>
+    <color name="toolcol9">#00a944</color>
+    <color name="toolcol10">#15d400</color>
+    <color name="toolcol11">#dfc500</color>
+    <color name="toolcol12">#ea8500</color>
+
+
+</resources>
