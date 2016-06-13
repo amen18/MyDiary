@@ -58,12 +58,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             view.setOnClickListener(new View.OnClickListener() {
                 @Override public void onClick(View v) {
                 Log.e("+++++++-------",getPosition() + "");
+                    final Activity activity = (Activity) context;
 
                     item = notes.get(getAdapterPosition());
                     if(item.isLocked()){
                         final EditText editText = new EditText(context);
                         editText.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
-                        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
+                        final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
                         alertDialogBuilder.setView(editText);
                         alertDialogBuilder.setTitle("Enter you password");
                         alertDialogBuilder.setPositiveButton("ok", new DialogInterface.OnClickListener() {
@@ -72,15 +73,14 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                                 if(SecurityManager.isPasswordCorrect(editText.getText().toString(),context)){
                                     Intent intent = new Intent(context, InfoActivity.class);
                                     intent.putExtra("listItem", item);
-                                    Activity activity = (Activity) context;
-
                                     context.startActivity(intent);
-
                                     activity.overridePendingTransition(R.anim.exit_out_left, R.anim.neitral_anim);
-
                                     dialog.dismiss();
+                                }else{
+                                    editText.setError("Incorrect password");
+
+//                                    dialog.dismiss();
                                 }
-                                dialog.dismiss();
                             }
                         }).setNegativeButton("cancel", new DialogInterface.OnClickListener() {
                             @Override
@@ -94,6 +94,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                         Intent intent = new Intent(context, InfoActivity.class);
                         intent.putExtra("listItem", item);
                         context.startActivity(intent);
+                        activity.overridePendingTransition(R.anim.exit_out_left, R.anim.neitral_anim);
+
                     }
                 }
             });
